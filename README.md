@@ -1,6 +1,6 @@
 # Hosung Kim — Data Science Portfolio
 
-**Live site:** https://hosungkim.github.io  
+**Live site:** [https://hosungkim.github.io  ](https://hosungkim48.github.io/)
 **Purpose:** A recruiter-friendly, visually bold portfolio that links to deep-dive project repos.
 
 This site is a minimalist static page (no framework build needed) styled with Tailwind via CDN.  
