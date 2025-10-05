@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hosung Kim — Data Science Portfolio</title>
+  <meta name="description" content="Data science & analytics projects by Hosung Kim (USC). Demand forecasting, pricing, modeling, and ML engineering." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root { --accent: #6d28d9; }
+    html, body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+    .glass { backdrop-filter: blur(8px); background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.14); }
+  </style>
+</head>
+<body class="bg-neutral-950 text-neutral-100">
+  <!-- Nav -->
+  <header class="sticky top-0 z-40 bg-neutral-950/80 glass">
+    <div class="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
+      <a href="#" class="font-extrabold text-xl tracking-tight">HK<span class="text-violet-400">·</span>Data</a>
+      <nav class="flex gap-6 text-sm">
+        <a href="#projects" class="hover:text-violet-300">Projects</a>
+        <a href="#about" class="hover:text-violet-300">About</a>
+        <a href="#contact" class="hover:text-violet-300">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-b from-violet-700/10 via-transparent to-transparent"></div>
+    <div class="mx-auto max-w-6xl px-4 py-24">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
+            Data science that <span class="text-violet-400">moves decisions</span>.
+          </h1>
+          <p class="mt-5 text-neutral-300 text-lg">
+            I’m Hosung Kim (USC). I build forecasting, pricing, and analytics models—then translate them into business outcomes.
+          </p>
+          <div class="mt-8 flex flex-wrap items-center gap-4">
+            <a href="#projects" class="px-5 py-3 rounded-2xl bg-violet-600 hover:bg-violet-500 font-semibold">
+              Browse Projects
+            </a>
+            <a href="https://github.com/HosungKim" target="_blank" class="px-5 py-3 rounded-2xl border border-neutral-700 hover:border-neutral-500 font-semibold">
+              GitHub Profile
+            </a>
+          </div>
+          <div class="mt-6 text-sm text-neutral-400">
+            Focus: Demand forecasting · Dynamic pricing · Time series · Deep learning
+          </div>
+        </div>
+        <div class="relative">
+          <div class="aspect-[4/3] rounded-3xl border border-neutral-800 glass p-6">
+            <div class="text-sm text-neutral-300">Latest project</div>
+            <div class="mt-2 text-xl font-bold">Demand Prediction</div>
+            <p class="mt-2 text-neutral-400">
+              Forecasts demand to support algorithmic pricing; evaluated models and business tradeoffs.
+            </p>
+            <div class="mt-5">
+              <a href="#projects" class="inline-block text-violet-300 hover:text-violet-200 underline underline-offset-4">
+                See details ↓
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="mx-auto max-w-6xl px-4 py-16">
+    <h2 class="text-3xl font-extrabold">Projects</h2>
+    <p class="mt-2 text-neutral-400">Each card links to the dedicated GitHub repo with full code, write-up, and notebooks.</p>
+
+    <div class="mt-8 grid md:grid-cols-3 gap-6">
+      <!-- Project Card Template -->
+      <a href="https://github.com/HosungKim/demand-prediction" target="_blank"
+         class="group block rounded-3xl border border-neutral-800 glass p-6 hover:border-violet-600 transition">
+        <div class="text-sm text-neutral-400">Forecasting · Pricing</div>
+        <div class="mt-2 text-xl font-bold group-hover:text-violet-300">Demand Prediction</div>
+        <p class="mt-2 text-neutral-300">
+          Built demand models (baseline → advanced), evaluated price sensitivity, and linked forecasts to revenue tradeoffs.
+        </p>
+        <ul class="mt-4 flex flex-wrap gap-2 text-xs text-neutral-300">
+          <li class="px-2 py-1 rounded-full bg-neutral-800/60">Python</li>
+          <li class="px-2 py-1 rounded-full bg-neutral-800/60">Pandas</li>
+          <li class="px-2 py-1 rounded-full bg-neutral-800/60">Stats/ML</li>
+        </ul>
+        <div class="mt-5 text-sm text-violet-300 underline underline-offset-4">Open repo</div>
+      </a>
+
+      <!-- Add more cards as you add projects -->
+      <!-- Example future cards:
+      <a href="https://github.com/HosungKim/walmart-sales-forecast" class="group block rounded-3xl border border-neutral-800 glass p-6 hover:border-violet-600 transition">
+        ...
+      </a>
+      -->
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="mx-auto max-w-6xl px-4 py-16">
+    <h2 class="text-3xl font-extrabold">About</h2>
+    <p class="mt-4 text-neutral-300 max-w-3xl">
+      USC Business Administration (Marshall) · Data analytics and modeling background. I like models that
+      are both empirically solid and business-savvy—where assumptions are explicit and the “so what” is measured.
+    </p>
+    <ul class="mt-6 flex flex-wrap gap-3 text-sm text-neutral-300">
+      <li class="px-3 py-1 rounded-full bg-neutral-800/60">Time series</li>
+      <li class="px-3 py-1 rounded-full bg-neutral-800/60">Causal inference</li>
+      <li class="px-3 py-1 rounded-full bg-neutral-800/60">Optimization</li>
+      <li class="px-3 py-1 rounded-full bg-neutral-800/60">Deep learning</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="mx-auto max-w-6xl px-4 py-16">
+    <div class="rounded-3xl border border-neutral-800 glass p-8">
+      <h2 class="text-2xl font-extrabold">Contact</h2>
+      <p class="mt-3 text-neutral-300">
+        Email: <a class="underline hover:text-violet-300" href="mailto:hosungkim48@gmail.com">hosungkim48@gmail.com</a> ·
+        LinkedIn: <a class="underline hover:text-violet-300" href="https://linkedin.com/in/hosun9k" target="_blank">hosun9k</a>
+      </p>
+    </div>
+    <footer class="mt-10 text-sm text-neutral-500">© <span id="y"></span> Hosung Kim</footer>
+  </section>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
